@@ -16,8 +16,21 @@ This repository contains a Python-based Discord bot that automatically completes
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repo-name/discord-ngram-bot.git
-2. Install the required dependencies:
-  pip install -r requirements.txt
-3. Add your Discord Bot Token to the environment or directly in the script:
-  ```bash
-  client.run('YOUR_DISCORD_API_TOKEN')
+2. Make a virtual environment
+   ```bash
+   python -m venv /path/to/new/virtual/environment
+3. Install the required dependencies:
+   ```bash
+   pip install discord.py
+4. Make a .env file with 2 key values
+   ```bash
+   DISCORD_TOKEN=YOUR_DISCORD_TOKEN
+   TRAINING_DATA=Shakespeare.txt
+5. Run the bot
+   ```bash
+   python main.py
+
+## Usage
+Invite the bot to your Discord server.
+Type a message <your phrase> in a channel where the bot is active.
+The bot will generate the next 10 words based on both bigram and trigram models, along with their log probabilities.
