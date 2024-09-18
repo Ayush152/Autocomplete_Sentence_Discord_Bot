@@ -31,6 +31,7 @@ This repository contains a Python-based Discord bot that automatically completes
    python main.py
 
 ## Usage
-Invite the bot to your Discord server.
-Type a message <your phrase> in a channel where the bot is active.
-The bot will generate the next 10 words based on both bigram and trigram models, along with their log probabilities.
+
+- Invite the bot to your Discord server.
+- Type a message <your phrase> in a channel where the bot is active.
+- The bot will generate the next 10 words based on both bigram and trigram models, along with their log probabilities.
